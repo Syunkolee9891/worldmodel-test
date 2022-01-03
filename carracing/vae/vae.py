@@ -18,7 +18,7 @@ class ConvVAE(object):
     self.is_training = is_training
     self.kl_tolerance = kl_tolerance
     self.reuse = reuse
-    with tf.variable_scope('conv_vae', reuse=self.reuse):
+    with tf.compat.v1.variable_scope('conv_vae', reuse=self.reuse):
       if not gpu_mode:
         with tf.device('/cpu:0'):
           tf.logging.info('Model using cpu.')
