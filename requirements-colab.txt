@@ -1,4 +1,4 @@
-tensorflow==1.8.0
+tensorflow==1.15.0
 cma==2.2.0
 estool==1.0
 gym==0.9.4
